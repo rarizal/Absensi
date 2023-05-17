@@ -36,7 +36,7 @@ const NavLink = ({ children }) => (
 	</Link>
 );
 
-export default function Header() {
+export default function HomePage() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (

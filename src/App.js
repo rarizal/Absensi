@@ -1,12 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 function App() {
 	return (
 		<Box>
 			<Routes>
-				<Route path="" element={<Header />}></Route>
+				<Route path="/" element={<HomePage />}></Route>
 			</Routes>
 		</Box>
 	);

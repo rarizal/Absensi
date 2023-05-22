@@ -27,7 +27,6 @@ const mainController = {
 			);
 			const timeEnd = moment(req.body.createdAt)
 				.add(1, "month")
-				.subtract(1, "day")
 				.format("YYYY-MM-DD HH:mm:ss");
 			const main = await db.AttendanceLogs.findAll({
 				where: {

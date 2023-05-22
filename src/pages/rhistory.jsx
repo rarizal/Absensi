@@ -57,6 +57,7 @@ export default function RHistory() {
 				console.log("MONTH FROM PICKER", monthx);
 			} else if (monthx) {
 				const user_log = JSON.parse(localStorage.getItem("user"));
+				alert(monthx);
 				const fetchData = await axios.post(
 					"http://localhost:2000/main/fetchbymonth",
 					{
